@@ -17,3 +17,7 @@ html {
 .list__item--done {
     text-decoration: line-through;
 }
+
+.remove {
+    background-color: red;
+}

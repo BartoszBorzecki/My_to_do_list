@@ -10,20 +10,6 @@
         },
     ];
 
-    const render = () => {
-        let htmlString = "";
-
-        for (const task of tasks) {
-            htmlString += `
-            <li class="list__item ${task.done ? "list__item--done" : ""}">
-            ${task.content}
-            </li>
-            `;
-        }
-
-        document.querySelector(".js-list").innerHTML = htmlString;
-
-    };
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -31,6 +17,36 @@
         });
         render();
     };
+
+    const removeTask = (index) => {
+        tasks.splice(index, 1);
+        render();
+    };
+
+    const render = () => {
+        let htmlString = "";
+
+        for (const task of tasks) {
+            htmlString += `
+            <li class="list__item ${task.done ? "list__item--done" : ""}">
+            ${task.content}
+            <button class="remove js-remove"></button>
+            </li>
+            `;
+        }
+
+        document.querySelector(".js-list").innerHTML = htmlString;
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+            });
+        });
+
+    };
+
 
     const onFormSubmit = (event) => {
         event.preventDefault();
