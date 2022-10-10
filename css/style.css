@@ -21,3 +21,7 @@ html {
 .remove {
     background-color: red;
 }
+
+.done {
+    background-color: green;
+}
