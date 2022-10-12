@@ -8,20 +8,5 @@ html {
 
 .body {
     font-family: 'Montserrat', sans-serif;
-}
-
-.list__item {
-    text-decoration: none;
-}
-
-.list__item--done {
-    text-decoration: line-through;
-}
-
-.remove {
-    background-color: red;
-}
-
-.done {
-    background-color: green;
+    background-color: #eee;
 }

@@ -1,0 +1,16 @@
+.list__item {
+    text-decoration: none;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.task__button {
+    background-color: green;
+    color: white;
+}
+
+.task__button--remove {
+    background-color: red;
+}
