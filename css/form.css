@@ -30,11 +30,36 @@
     background-color: hsl(0, 97%, 44%);
 }
 
-
 .task__button:hover {
     background-color: hsl(120, 99%, 35%);
 }
 
 .task__button--remove:hover {
     background-color: hsl(0, 97%, 50%);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+.form__button {
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }
