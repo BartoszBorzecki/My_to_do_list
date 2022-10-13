@@ -1,5 +1,16 @@
+.list {
+    padding: 20px;
+    word-break: break-word;
+}
+
 .list__item {
-    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    list-style-type: none;
+    border-bottom: 2px solid hsl(0, 0%, 91%);
+    padding: 10px;
+    align-items: center;
 }
 
 .list__item--done {
@@ -7,10 +18,23 @@
 }
 
 .task__button {
-    background-color: green;
+    background-color: hsl(120, 99%, 27%);
     color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .task__button--remove {
-    background-color: red;
+    background-color: hsl(0, 97%, 44%);
+}
+
+
+.task__button:hover {
+    background-color: hsl(120, 99%, 35%);
+}
+
+.task__button--remove:hover {
+    background-color: hsl(0, 97%, 50%);
 }
