@@ -1,5 +1,6 @@
 {
     let tasks = [];
+    let hideDoneTasks = false;
 
 
     const addNewTask = (newTaskContent) => {
@@ -7,7 +8,6 @@
             ...tasks,
             {
                 content: newTaskContent,
-                done: false,
             },
         ];
 
@@ -57,7 +57,7 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -74,7 +74,22 @@
 
         document.querySelector(".js-list").innerHTML = htmlString;
 
+    };
+
+    const renderButtons = () => {
+
+    };
+
+    const bindButtonsEvents = () => {
+
+    };
+
+    const render = () => {
+
+        renderTasks();
+        renderButtons();
         bindEvents();
+        bindButtonsEvents();
     };
 
 
