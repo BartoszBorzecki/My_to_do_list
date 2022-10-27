@@ -39,6 +39,23 @@
 
     };
 
+    const toggleHideDoneTask = () => {
+        hideDoneTasks = !hideDoneTasks;
+
+        render();
+
+    };
+
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done:true,
+
+        }));
+
+        render();
+    };
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -97,7 +114,23 @@
     };
 
     const bindButtonsEvents = () => {
+        const toggleHideDoneTaskButton = document.querySelector(".js-toggleHideDoneTask");
 
+        if (toggleHideDoneTaskButton) {
+            toggleHideDoneTaskButton.addEventListener("click", () => {
+
+                toggleHideDoneTask();
+            })
+        };
+
+        const markAllTasksDoneButton = document.querySelector(".js-markAllTasksDone");
+
+        if (markAllTasksDoneButton) {
+            markAllTasksDoneButton.addEventListener("click", () => {
+
+                markAllTasksDone();
+            })
+        };
     };
 
     const render = () => {
