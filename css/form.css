@@ -3,7 +3,7 @@
     word-break: break-word;
 }
 
-.task {
+.taskList {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
@@ -13,11 +13,11 @@
     align-items: center;
 }
 
-.task__content--done {
+.taskList__content--done {
     text-decoration: line-through;
 }
 
-.task__button {
+.taskList__button {
     background-color: hsl(120, 99%, 27%);
     color: white;
     border: none;
@@ -26,15 +26,15 @@
     cursor: pointer;
 }
 
-.task__button--remove {
+.taskList__button--remove {
     background-color: hsl(0, 97%, 44%);
 }
 
-.task__button:hover {
+.taskList__button:hover {
     background-color: hsl(120, 99%, 35%);
 }
 
-.task__button--remove:hover {
+.taskList__button--remove:hover {
     background-color: hsl(0, 97%, 50%);
 }
 
