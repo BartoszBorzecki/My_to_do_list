@@ -49,7 +49,7 @@
     const markAllTasksDone = () => {
         tasks = tasks.map((task) => ({
             ...task,
-            done:true,
+            done: true,
 
         }));
 
@@ -103,10 +103,10 @@
         }
 
         listButtons.innerHTML = `
-                  <button class = "section__button js-toggleHideDoneTask">
+                  <button class = "section__button js-toggleHideDoneTask" ${tasks.some(({ done }) => done) ? "" : "disabled"}>
                      ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
                   </button>
-                  <button class = "section__button js-markAllTasksDone $(tasks.every(({ done }) => done) ? "disabled" : ""}>
+                  <button class = "section__button js-markAllTasksDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
                      Ukończ wszystkie
                   </button>   
         `;
