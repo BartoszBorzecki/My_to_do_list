@@ -96,7 +96,7 @@
     const renderButtons = () => {
         const listButtons = document.querySelector(".js-listButtons");
 
-        if (tasks.lenght === 0) {
+        if (tasks.length === 0) {
             listButtons.innerHTML = "";
 
             return;
