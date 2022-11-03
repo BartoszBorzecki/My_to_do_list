@@ -3,7 +3,14 @@
 }
 
 .section__header {
-    border-bottom: 2px solid hsl(0, 0%, 91%);
     padding: 15px;
     font-size: 20px;
+}
+
+.section__container {
+    display: grid;
+	grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+	align-items: center;
+    border-bottom: 2px solid hsl(0, 0%, 91%);
 }

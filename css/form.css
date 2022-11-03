@@ -42,6 +42,10 @@
     background-color: hsl(0, 97%, 50%);
 }
 
+.listButtons {
+    padding: 20px;
+}
+
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
