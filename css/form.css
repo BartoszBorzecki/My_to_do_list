@@ -17,6 +17,10 @@
     text-decoration: line-through;
 }
 
+.taskList--hide {
+    display: none;
+}
+
 .taskList__button {
     background-color: hsl(120, 99%, 27%);
     color: white;
