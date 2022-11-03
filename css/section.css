@@ -9,10 +9,26 @@
 
 .section__container {
     display: grid;
-	grid-template-columns: 1fr auto;
-	align-items: center;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     border-bottom: 2px solid hsl(0, 0%, 91%);
 }
+
+.section__button {
+    background-color: transparent;
+    border: none;
+    color: teal;
+    cursor: pointer;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 32%);
+}
+
+.section__button:disabled {
+    color: hsl(0, 0%, 87%);
+}
+
 
 @media (max-width: 767px) {
     .section__container {
