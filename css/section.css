@@ -22,7 +22,8 @@
 }
 
 .section__button:hover {
-    color: hsl(180, 100%, 32%);
+    color: hsl(180, 100%, 35%);
+    transition: 1s;
 }
 
 .section__button:disabled {
