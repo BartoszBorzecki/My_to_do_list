@@ -19,11 +19,11 @@
     border: none;
     color: teal;
     cursor: pointer;
+    transition: 1s;
 }
 
 .section__button:hover {
     color: hsl(180, 100%, 35%);
-    transition: 1s;
 }
 
 .section__button:disabled {
